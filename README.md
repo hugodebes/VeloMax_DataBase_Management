@@ -6,13 +6,13 @@
 
 Implementation of a database for a bicycle company with a WPF application.
 
-VeloMax is an imaginary company that sells bicycles and spare parts for bicycles. Our goal was to create a new database to make the clients and sellings management system easier to use. Using the WPF application you are able to manage the creation, deletion and modification of the bicycles, spare parts, clients, orders and suppliers. At any time you have access to the stock of bicycles and spare parts.
+VeloMax is an imaginary company that sells bicycles and spare parts for bicycles. Our goal was to create a new database to make the clients and selling management system easier to use. Using the WPF application you are able to manage the creation, deletion and modification of the bicycles, spare parts, clients, orders and suppliers. At any time you have access to the stock of bicycles and spare parts.
 
 <br/>
 
 ## Set up
 
-To create the database you'll first need to download the 3 csv files (**assemblages.csv, modele.csv,  programme.csv**). These are the last tuples of the database. If you are using MySQL Workbench you have to put these files in the _Uploads_ folder of MySQL Workbench. At the following path : _MySQL/MySQL Server 8.0/Uploads_
+To create the database you'll first need to download the 3 CSV files (**assemblages.csv, modele.csv,  programme.csv**). These are the last tuples of the database. If you are using MySQL Workbench you have to put these files in the _Uploads_ folder of MySQL Workbench. At the following path : _MySQL/MySQL Server 8.0/Uploads_
 
 If you  don't know where your _MySQL_ folder is you can run this line on MySQL Workbench:
 
@@ -23,7 +23,7 @@ SHOW VARIABLES LIKE "secure_file_priv";
 Once you have placed the csv files in the _Uploads_ folder you can run the **VeloMax.sql** file to create your database.
 
 Be careful in the **VeloMax_Debes_Delemazure.sln** to change the _server_ and _localhost_ variables to the ones you have on MySQL Workbench, in the Utilities.cs class line 29.
-You can now launch the C# code (**VeloMax_Debes_Delemazure.sln**) to manage your database. Use the ID/Password _bozo/bozo_ to be connected as a client, which means you won't be able to modify or delete tuples of the database. And use the ID/Password _root/root_ to be connected as the administrator and have access to every functions.
+You can now launch the C# code (**VeloMax_Debes_Delemazure.sln**) to manage your database. Use the ID/Password _bozo/bozo_ to be connected as a client, which means you won't be able to modify or delete tuples of the database. And use the ID/Password _root/root_ to be connected as the administrator and have access to every function.
 
 <img src=https://user-images.githubusercontent.com/63778269/138357657-85fe841c-9e29-401f-ba04-7736e3bcba15.gif height=250/>
 
@@ -52,7 +52,7 @@ One of the main ideas of our project was to use the interoperability between the
   <img src=https://user-images.githubusercontent.com/63778269/138359072-c07541b5-2cf2-4883-bb21-9f50cc1f5b86.gif height=230/>
 </p>
 
-The employee of the company can make an order for a bike or a square part at any time with a real-time validation of the available stock. If a client purchases a bicycle, the system will check whether the bicycle is available or if it can be assembled with square parts. If the bicycle or the spare parts are not available, the system will automatically order the missing parts or bicycle and you can choose which supplier is the best depending of the delay  of delivery.
+The employee of the company can make an order for a bike or a square part at any time with a real-time validation of the available stock. If a client purchases a bicycle, the system will check whether the bicycle is available or if it can be assembled with square parts. If the bicycle or the spare parts are not available, the system will automatically order the missing parts or bicycle. It is possible to choose the supplier depending of the delay of delivery or the price.
 
 <p align="center"> 
   <img src=https://user-images.githubusercontent.com/63778269/138360030-f8af284a-3780-4538-96de-ce9591b62d0d.gif height=350/>
